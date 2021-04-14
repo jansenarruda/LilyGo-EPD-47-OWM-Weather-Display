@@ -6,4 +6,4 @@ NOTE: DONT USE THIS SOFTWARE IF YOU DONT LIKE THE LICENCE TERMS
 
 You may get some compilation warnings, they are not errors
 
-Version 4.1 is faster and moree compact than the original versions
+Version 4.1 is faster and more compact and has many changes.
