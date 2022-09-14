@@ -75,7 +75,7 @@ BLEScan* pBLEScan;
 
 
 //################  VERSION  ##################################################
-String version = "2.7 / 4.7in";  // Programme version, see change log at end
+String version = "5.0 / 4.7in vroland/epdiy";  // Programme version
 //################ VARIABLES ##################################################
 
 enum alignment {LEFT, RIGHT, CENTER};
@@ -363,16 +363,7 @@ class MyAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks {
               }
 
             }
-/*
-            if (srvdata.macstr == "A4C1389530A7") {
-              reg_ble[0] = srvdata;
-              Serial.printf("DATA FROM SENSOR - A4C1389530A7");
-            }
-            else if (srvdata.macstr == "A4C1382260A5") {
-              reg_ble[1] = srvdata;
-              Serial.printf("DATA FROM SENSOR - A4C1382260A5");
-            }
-*/
+
           }
 
           pBLEScan->clearResults();   // delete results fromBLEScan buffer to release memory
@@ -436,16 +427,6 @@ uint8_t StartWiFi() {
     wifiAttempts++;
   }
 
-/*
-  if (WiFi.waitForConnectResult() != WL_CONNECTED) {
-    Serial.printf("STA: Failed!\n");
-    WiFi.mode(WIFI_OFF); // switch off AP
-    WiFi.disconnect(false);
-    WiFi.mode(WIFI_STA); // switch off AP
-    delay(500);
-    WiFi.begin(ssid, password);
-  }
-*/
   Serial.print("\r\nMemoria apos: ");
   Serial.println(ESP.getFreeHeap());
   if (WiFi.status() == WL_CONNECTED) {
@@ -1515,5 +1496,5 @@ void print_wakeup_reason(){
   }
 }
 /*
-   1071 lines of code 03-03-2021
+   1517 lines of code 2022-09-14
 */
