@@ -699,9 +699,7 @@ void DisplayWeather() {                          // 4.7" e-paper display is 960x
   DisplayAstronomySection(5, 252);               // Astronomy section Sun rise/set, Moon phase and Moon icon
   DisplayMainWeatherSection(320, 250);           // Centre section of display for Location, temperature, Weather report, current Wx Symbol
   DisplayHourSection(320,50);                           //Centre Large Hour
-//  DisplayMainWeatherSection(320, 110);           // Centre section of display for Location, temperature, Weather report, current Wx Symbol
   DisplayWeatherIcon(835, 140);                  // Display weather icon scale = Large;
-//  DisplayForecastSection(285, 220);              // 3hr forecast boxes
   DisplayForecastSection(695, 220);              // 3hr forecast boxes
   DisplayGraphSection(320, 220);                 // Graphs of pressure, temperature, humidity and rain or snowfall
   for (int idx=0;idx<num_sensors;idx++){
@@ -709,19 +707,6 @@ void DisplayWeather() {                          // 4.7" e-paper display is 960x
       Serial.println("");
       DisplayBLEData(730, 400+(idx*55),sensors[idx].display_name, reg_ble[idx]);
   }
-//  DisplayBLEData(730, 500,"Externa", reg_ble[1]);
-  DrawBatteryBLE(515,320, 1, 10);
-  DrawBatteryBLE(530,320, 1, 20);
-  DrawBatteryBLE(545,320, 1, 30);
-  DrawBatteryBLE(560,320, 1, 40);
-  DrawBatteryBLE(575,320, 1, 50);
-  DrawBatteryBLE(590,320, 1, 60);
-  DrawBatteryBLE(605,320, 1, 70);
-  DrawBatteryBLE(620,320, 1, 80);
-  DrawBatteryBLE(635,320, 1, 90);
-  DrawBatteryBLE(650,320, 1, 100);
-//  DrawBatteryBLE1(520,295, 1, 50);
-//  drawString(490, 320-25, "A 1", LEFT);
 
 
 }
@@ -867,7 +852,6 @@ void DisplayForecastTextSection(int x, int y) {
 
 void DisplayVisiCCoverUVISection(int x, int y) {
   setFont(OpenSans12B);
-//  Serial.print("=========================="); Serial.println(WxConditions[0].Visibility);
   Visibility(x + 5, y, String(WxConditions[0].Visibility) + "M");
   CloudCover(x + 155, y, WxConditions[0].Cloudcover);
   Display_UVIndexLevel(x + 265, y, WxConditions[0].UVI);
