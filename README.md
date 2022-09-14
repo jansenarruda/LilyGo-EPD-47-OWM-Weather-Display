@@ -15,3 +15,5 @@ is compatible with the last version of vroland epdiy (https://github.com/vroland
 
 can build with platformio.
 
+Has BLE support (read ATC Mi Thermometer with alternative firmware https://github.com/atc1441/ATC_MiThermometer or https://github.com/pvvx/ATC_MiThermometer) 
+
