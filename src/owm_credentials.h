@@ -1,8 +1,6 @@
 const bool DebugDisplayUpdate = false;
 
 // Change to your WiFi credentials
-//const char* ssid     = "archer";
-//const char* password = "enterprise";
 const char* ssid     = "ssid";
 const char* password = "password";
 
