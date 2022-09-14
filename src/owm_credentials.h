@@ -13,9 +13,9 @@ const char server[] = "api.openweathermap.org";
 //http://api.openweathermap.org/data/2.5/weather?q=Melksham,UK&APPID=your_OWM_API_key&mode=json&units=metric&cnt=1
 
 //Set your location according to OWM locations
-String City             = "Sâo Paulo";                     // Your home city See: http://bulk.openweathermap.org/sample/
-String Latitude         = "-23.5475";                      // Latitude of your location in decimal degrees
-String Longitude        = "-46.6361";                      // Longitude of your location in decimal degrees
+String City             = "Your city";                     // Your home city See: http://bulk.openweathermap.org/sample/
+String Latitude         = "-28.5475";                      // Latitude of your location in decimal degrees
+String Longitude        = "-45.6361";                      // Longitude of your location in decimal degrees
 String Language         = "pt_br";                            // NOTE: Only the weather description is translated by OWM
 String Country          = "BR";                            // Your _ISO-3166-1_two-letter_country_code country code, on OWM find your nearest city and the country code is displayed
                                                            // Examples: Arabic (AR) Czech (CZ) English (EN) Greek (EL) Persian(Farsi) (FA) Galician (GL) Hungarian (HU) Japanese (JA)
@@ -30,7 +30,7 @@ const char* ntpServer   = "a.ntp.br";                      // Or, choose a time 
                                                            // EU "0.europe.pool.ntp.org"
                                                            // US "0.north-america.pool.ntp.org"
                                                            // See: https://www.ntppool.org/en/                                                           
-int gmtOffset_sec     = -10800;                            // UK normal time is GMT, so GMT Offset is 0, for US (-5Hrs) is typically -18000, AU is typically (+8hrs) 28800
+int gmtOffset_sec     = -10800;                            // UK normal time is GMT, so GMT Offset is 0, for US (-5Hrs) is typically -18000, AU is typically (+8hrs) 28800, BR SP (-3hrs) -10800
 int daylightOffset_sec = 0;                                // In the UK DST is +1hr or 3600-secs, other countries may use 2hrs 7200 or 30-mins 1800 or 5.5hrs 19800 Ahead of GMT use + offset behind - offset
 int ntpTimeout          = 5000;                            // time (in milliseconds) to wait response from ntp server. Ajust to your network reality
 gpio_num_t wakeupButton = GPIO_NUM_34;                     // button to wakeup, if don't want to use, commment next line (#define USE_BUTTON_WAKEUP)
@@ -54,7 +54,7 @@ typedef struct {
 } ble_sensors;
 
 ble_sensors sensors[] = {
-                          {"interno","Interno","XXXXXXX","VERDE"},
-                          {"externo", "Externo", "YYYYY","VERMELHO"},
-                          {"externo2","Externo 2","ZZZZZ","AMARELO"}
+                          {"name","display name","mac addr","label"},
+                          {"name","display name","mac addr","label"},
+                          {"name","display name","mac addr","label"},
                         };
