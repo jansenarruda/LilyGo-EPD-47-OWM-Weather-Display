@@ -10,6 +10,7 @@ You may get some compilation warnings, they are not errors
 Version 4.1 is faster and more compact and has many changes.
 
 *** New version  ***
+Version 5.0 
 
 is compatible with the last version of vroland epdiy (https://github.com/vroland/epdiy)
 
