@@ -1588,7 +1588,7 @@ const uint8_t OpenSans18BBitmaps[25371] = {
     0x7A, 0x58, 0xFB, 0xBC, 0x87, 0x0D, 0xE9, 0xC4, 0xDA, 0x34, 0x12, 0x06, 0xB6, 0x1B, 0xBC, 0x0E,
     0x51, 0x56, 0x15, 0xB7, 0xB5, 0xD3, 0x0E, 0x17, 0x7C, 0xA0, 0xF5,
 };
-const GFXglyph OpenSans18BGlyphs[] = {
+const EpdGlyph OpenSans18BGlyphs[] = {
     { 0, 0, 10, 0, 0, 8, 0 }, //  
     { 7, 27, 11, 2, 27, 90, 8 }, // !
     { 14, 10, 18, 2, 27, 77, 98 }, // "
@@ -1781,14 +1781,14 @@ const GFXglyph OpenSans18BGlyphs[] = {
     { 21, 38, 24, 2, 29, 146, 24992 }, // �
     { 22, 38, 22, 0, 29, 233, 25138 }, // �
 };
-const UnicodeInterval OpenSans18BIntervals[] = {
+const EpdUnicodeInterval OpenSans18BIntervals[] = {
     { 0x20, 0x7E, 0x0 },
     { 0xA0, 0xFF, 0x5F },
 };
-const GFXfont OpenSans18B = {
+const EpdFont OpenSans18B = {
     (uint8_t*)OpenSans18BBitmaps,
-    (GFXglyph*)OpenSans18BGlyphs,
-    (UnicodeInterval*)OpenSans18BIntervals,
+    (EpdGlyph*)OpenSans18BGlyphs,
+    (EpdUnicodeInterval*)OpenSans18BIntervals,
     2,
     1,
     51,

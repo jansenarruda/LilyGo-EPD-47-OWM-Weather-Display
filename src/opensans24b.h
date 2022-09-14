@@ -2096,7 +2096,7 @@ const uint8_t OpenSans24BBitmaps[33495] = {
     0xE7, 0x71, 0xD0, 0xC1, 0x3A, 0xEB, 0xE0, 0x88, 0xD6, 0xF1, 0x2A, 0x3D, 0xE1, 0x99, 0x5F, 0x2E,
     0x52, 0xCF, 0x3F, 0x30, 0x0F, 0x12, 0xAC,
 };
-const GFXglyph OpenSans24BGlyphs[] = {
+const EpdGlyph OpenSans24BGlyphs[] = {
     { 0, 0, 13, 0, 0, 8, 0 }, //  
     { 10, 37, 14, 2, 36, 128, 8 }, // !
     { 18, 13, 24, 3, 36, 100, 136 }, // "
@@ -2289,14 +2289,14 @@ const GFXglyph OpenSans24BGlyphs[] = {
     { 27, 50, 32, 3, 38, 186, 33008 }, // þ
     { 29, 50, 28, 0, 38, 301, 33194 }, // ÿ
 };
-const UnicodeInterval OpenSans24BIntervals[] = {
+const EpdUnicodeInterval OpenSans24BIntervals[] = {
     { 0x20, 0x7E, 0x0 },
     { 0xA0, 0xFF, 0x5F },
 };
-const GFXfont OpenSans24B = {
+const EpdFont OpenSans24B = {
     (uint8_t*)OpenSans24BBitmaps,
-    (GFXglyph*)OpenSans24BGlyphs,
-    (UnicodeInterval*)OpenSans24BIntervals,
+    (EpdGlyph*)OpenSans24BGlyphs,
+    (EpdUnicodeInterval*)OpenSans24BIntervals,
     2,
     1,
     68,

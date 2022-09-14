@@ -641,7 +641,7 @@ const uint8_t OpenSans8BBitmaps[10210] = {
     0xF8, 0x0A, 0xD4, 0xFF, 0xED, 0xBF, 0x1C, 0x50, 0x72, 0x1D, 0x23, 0x03, 0x03, 0x00, 0x27, 0x39,
     0x1F, 0xB4,
 };
-const GFXglyph OpenSans8BGlyphs[] = {
+const EpdGlyph OpenSans8BGlyphs[] = {
     { 0, 0, 4, 0, 0, 8, 0 }, //  
     { 4, 12, 5, 0, 12, 35, 8 }, // !
     { 6, 4, 8, 1, 12, 21, 43 }, // "
@@ -834,14 +834,14 @@ const GFXglyph OpenSans8BGlyphs[] = {
     { 9, 17, 11, 1, 13, 56, 10066 }, // þ
     { 10, 17, 10, 0, 13, 88, 10122 }, // ÿ
 };
-const UnicodeInterval OpenSans8BIntervals[] = {
+const EpdUnicodeInterval OpenSans8BIntervals[] = {
     { 0x20, 0x7E, 0x0 },
     { 0xA0, 0xFF, 0x5F },
 };
-const GFXfont OpenSans8B = {
+const EpdFont OpenSans8B = {
     (uint8_t*)OpenSans8BBitmaps,
-    (GFXglyph*)OpenSans8BGlyphs,
-    (UnicodeInterval*)OpenSans8BIntervals,
+    (EpdGlyph*)OpenSans8BGlyphs,
+    (EpdUnicodeInterval *)OpenSans8BIntervals,
     2,
     1,
     23,
